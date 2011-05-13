@@ -4,9 +4,9 @@
  * @param collectionName is a non-empty collection in the current database 
  * 
  * @example
- *   > load( "full/path/to/file/count_objects.js" )
+ *   > load( "full/path/to/file/count_fixed_range.js" )
  *   > use my_database 
- *   > db.getObjectCounts( "my_collection" )
+ *   > db.getObjectCounts( "my_collection", "shard0001" )
  *   
 */
 DB.prototype.getObjectCounts = function( collectionName , shard) {
